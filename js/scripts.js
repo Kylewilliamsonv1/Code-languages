@@ -1,7 +1,14 @@
 $(document).ready(function() {
-  $("#").submit(function(event) {
+  $("input#selections").submit(function(event) {
     event.preventDefault();
-    const language = ($("#").valueOf());
-    if (language === )
+    const language = ($("choice#language").val());
+    if (survey1 === frontend) {
+      prompt("worked?")
+      $('#selectionA').show();
+    } else {
+      prompt("worked?")
+      $('#selectionE').show()
+    }
   });
+});
 
