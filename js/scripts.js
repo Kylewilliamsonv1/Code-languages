@@ -6,10 +6,11 @@ $(document).ready(function() {
     const pick3 = $("#survey3").val();
     const pick4 = $("#survey4").val();
     const pick5 = $("#survey5").val();
+    let sum = 0
     if (parseInt(pick1)===1) {
-      sum = 1
+      sum += 1
     } else {
-      sum = 2
+      sum += 2
     }
     if (parseInt(pick2)===1 ) {
       sum += 1
@@ -37,7 +38,7 @@ $(document).ready(function() {
     } else if (sum>5 && sum<8) {
       $("#selections").show();
       $(".selectionB").show();
-    } else if (sum>8) {
+    } else {
       $("#selections").show();
       $(".selectionC").show();
     }
